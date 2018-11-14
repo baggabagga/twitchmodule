@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Training Dummy" nameDescription="a very dumb training dummy" race="undead" experience="0" speed="0">
+	<health now="100000" max="100000" />
+	<look type="102" corpse="2253" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="fire" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="poison" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="energy" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="energyarea" />
+		</attack>
+		<attack name="death" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="physical" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="greenspark" />
+		</attack>
+		<attack name="ice" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+		<attack name="holy" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="holyarea" />
+		</attack>
+		<attack name="drown" interval="2000" chance="50" radius="5" target="0" min="-99" max="-101">
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="10">
+		<defense name="healing" interval="2000" chance="50" min="80000" max="100000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+</monster>
